@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657574429-9gd1deNM" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "แจกฟรี 50.-",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://cdn.discordapp.com/attachments/1028671702433018018/1031894547187367956/Social_media_banner_summer_festival_with_the_best_deals.jpg",
+            "size": "full"
+          }
+        ],
+        "cornerRadius": "xxl",
+        "margin": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "รับทุนฟรี",
+                "color": "#750da0",
+                "align": "center",
+                "weight": "bold"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://cdn.discordapp.com/attachments/1026780771689697332/1029658556447866910/ezgif.com-gif-maker_12.png",
+                    "aspectRatio": "4:1",
+                    "animated": true
+                  }
+                ],
+                "backgroundColor": "#fcdf15",
+                "borderWidth": "semi-bold",
+                "cornerRadius": "xl",
+                "background": {
+                  "type": "linearGradient",
+                  "angle": "0deg",
+                  "startColor": "#fcdf15",
+                  "endColor": "#fcdf15",
+                  "centerColor": "#f6ff00"
+                }
+              }
+            ],
+            "backgroundColor": "#FFCC33",
+            "borderWidth": "semi-bold",
+            "borderColor": "#ffde00",
+            "cornerRadius": "xxl",
+            "background": {
+              "type": "linearGradient",
+              "angle": "0deg",
+              "startColor": "#ffa900",
+              "endColor": "#ffa900",
+              "centerColor": "#FFCC33"
+            },
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://lin.ee/ytwMHS1"
+            }
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "สมัคร",
+                    "color": "#750da0",
+                    "align": "center",
+                    "weight": "bold"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://cdn.discordapp.com/attachments/1026780771689697332/1029658556447866910/ezgif.com-gif-maker_12.png",
+                        "aspectRatio": "4:1",
+                        "animated": true
+                      }
+                    ],
+                    "backgroundColor": "#fcdf15",
+                    "borderWidth": "semi-bold",
+                    "cornerRadius": "lg",
+                    "background": {
+                      "type": "linearGradient",
+                      "angle": "0deg",
+                      "startColor": "#fcdf15",
+                      "endColor": "#fcdf15",
+                      "centerColor": "#f6ff00"
+                    }
+                  }
+                ]
+              }
+            ],
+            "backgroundColor": "#FFCC33",
+            "borderColor": "#ffde00",
+            "borderWidth": "semi-bold",
+            "cornerRadius": "xxl",
+            "background": {
+              "type": "linearGradient",
+              "angle": "0deg",
+              "startColor": "#ffa900",
+              "endColor": "#ffa900",
+              "centerColor": "#FFCC33"
+            },
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "http://www.autobetkub.com/"
+            }
+          }
+        ],
+        "spacing": "md",
+        "margin": "lg"
+      }
+    ],
+    "backgroundColor": "#9900FF",
+    "paddingAll": "md",
+    "borderColor": "#980bd0",
+    "borderWidth": "semi-bold",
+    "cornerRadius": "xl",
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#6e0b9a",
+      "endColor": "#6e0b9a",
+      "centerColor": "#9900FF"
+    }
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
